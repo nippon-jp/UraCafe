@@ -48,6 +48,14 @@
         .rounded-custom {
             border-radius: 2.5rem;
         }
+
+        /* アニメーション */
+        .hover-lift {
+            transition: transform 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body class="bg-orange-50/30 text-gray-800">
@@ -70,9 +78,14 @@
                 <a href="#jeep" class="hover:text-red-500 transition">Jeep試乗</a>
                 <a href="#access" class="hover:text-red-500 transition">アクセス</a>
             </nav>
-            <a href="#present" class="bg-red-500 text-white px-4 sm:px-6 py-2 rounded-full font-bold text-xs sm:text-sm hover:bg-red-600 transition shadow-md whitespace-nowrap">
-                プレゼント応募
-            </a>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.instagram.com/uracafe_/" target="_blank" class="text-gray-400 hover:text-red-500 transition text-xl hidden sm:block">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#present" class="bg-red-500 text-white px-4 sm:px-6 py-2 rounded-full font-bold text-xs sm:text-sm hover:bg-red-600 transition shadow-md whitespace-nowrap">
+                    プレゼント応募
+                </a>
+            </div>
         </div>
     </header>
 
@@ -124,7 +137,7 @@
                             </div>
                             <div>
                                 <h3 class="font-bold text-xl mb-1">SNSフォトコンテスト</h3>
-                                <p class="text-gray-600">「#UraCafe2026」をつけて投稿！優秀者にはペアランチ招待券など豪華賞品を贈呈。</p>
+                                <p class="text-gray-600">「#UraCafe2026」をつけ、<a href="https://www.instagram.com/uracafe_/" target="_blank" class="font-bold text-red-500 underline">@uracafe_</a> をメンションして投稿！優秀者には豪華賞品を贈呈。</p>
                             </div>
                         </li>
                         <li class="flex items-start">
@@ -140,7 +153,8 @@
                 </div>
                 <div class="w-full lg:w-1/2 relative">
                     <div class="absolute inset-0 bg-red-100 rounded-custom rotate-3 scale-105 opacity-50"></div>
-                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800" alt="Cafe House" class="rounded-custom shadow-xl relative z-10 w-full object-cover aspect-video border-8 border-white">
+                    <!-- アップロードされた外観写真 UraCafe02.jpg を使用 -->
+                    <img src="UraCafe02.jpg" alt="UraCafe 外観写真" class="rounded-custom shadow-xl relative z-10 w-full h-[400px] object-cover border-8 border-white" onerror="this.src='https://via.placeholder.com/800x450?text=UraCafe+Exterior';">
                 </div>
             </div>
         </div>
@@ -280,16 +294,17 @@
                          <a href="https://tabelog.com/hokkaido/A0108/A010804/1079411/" target="_blank" class="flex-1 text-center bg-orange-100 text-orange-700 py-3 rounded-full font-bold hover:bg-orange-200 transition">
                             食べログを見る
                          </a>
-                         <a href="#" class="flex-1 text-center bg-gray-100 text-gray-700 py-3 rounded-full font-bold hover:bg-gray-200 transition">
-                            お問い合わせ
+                         <a href="https://www.instagram.com/uracafe_/" target="_blank" class="flex-1 text-center bg-gray-100 text-gray-700 py-3 rounded-full font-bold hover:bg-gray-200 transition">
+                            Instagramを見る
                          </a>
                     </div>
                 </div>
-                <div class="rounded-custom overflow-hidden shadow-2xl h-80 relative">
-                    <img src="https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format&fit=crop&q=80&w=800" alt="Hokkaido Landscape" class="w-full h-full object-cover">
-                    <div class="absolute inset-0 flex items-center justify-center bg-black/20 text-white font-bold p-10 text-center">
+                <div class="rounded-custom overflow-hidden shadow-2xl h-80 relative group">
+                    <!-- アクセス情報横に内装写真 UraCafe01.jpg を配置して雰囲気を伝える -->
+                    <img src="UraCafe01.jpg" alt="UraCafe 内装写真" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/30 text-white font-bold p-10 text-center">
                         <div>
-                            <p class="text-2xl mb-2">2026年、浦河の絶景と<br>お待ちしております。</p>
+                            <p class="text-2xl mb-2 font-brand">心地よい木の空間で<br>お待ちしております。</p>
                             <p class="text-sm opacity-80 underline">Google Mapで開く</p>
                         </div>
                     </div>
@@ -313,7 +328,7 @@
                 </p>
             </div>
             <div class="flex justify-center space-x-8 mb-8">
-                <a href="#" class="text-gray-400 hover:text-red-500 transition text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/uracafe_/" target="_blank" class="text-gray-400 hover:text-red-500 transition text-2xl"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="text-gray-400 hover:text-red-500 transition text-2xl"><i class="fab fa-facebook-f"></i></a>
             </div>
             <p class="text-gray-400 text-xs">© 2026 UraCafe & Jeep Special Event. All Rights Reserved.</p>
