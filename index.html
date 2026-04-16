@@ -163,7 +163,7 @@
     <section id="menu" class="py-20 bg-orange-50/50">
         <div class="container mx-auto px-4 text-center">
             <div class="flex justify-center mb-6">
-                 <img src="UraCafe _Logo.jpg" alt="Logo Accent" class="h-16 opacity-50 grayscale hover:grayscale-0 transition duration-500 cursor-default" onerror="this.style.display='none'">
+                 <img src="UraCafe _Logo.jpg" alt="Logo Accent" class="h-16 opacity-50 grayscale hover:grayscale-0 transition duration-500 cursor-default" onerror="this.src='https://via.placeholder.com/150x150?text=UraCafe';">
             </div>
             <h2 class="text-3xl md:text-5xl font-black mb-4 italic text-red-600">Special Strawberry Menu</h2>
             <p class="text-gray-600 mb-16 font-bold">2026年夏の新作、浦河特産「夏いちご」のフルコース。</p>
@@ -216,16 +216,19 @@
         <div class="container mx-auto px-4 relative z-10">
             <div class="flex flex-wrap items-center">
                 <div class="w-full lg:w-1/2 mb-12 lg:mb-0 bg-white/5 rounded-custom p-4">
-                    <!-- お送りいただいた Jeep Wrangler の画像 kv.jpg.img.2880.jpg を使用 -->
                     <img src="kv.jpg.img.2880.jpg" alt="Jeep Wrangler" class="rounded-custom shadow-2xl w-full h-auto object-contain" onerror="this.src='https://via.placeholder.com/800x450?text=Jeep+Wrangler';">
                 </div>
                 <div class="w-full lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
                     <div class="flex items-center space-x-6 mb-8">
-                        <div class="bg-white p-4 rounded-xl">
+                        <!-- Jeep Logo -->
+                        <div class="bg-white p-4 rounded-xl shadow-lg">
                             <img src="jeep_logo.jpg" alt="Jeep Logo" class="h-8 w-auto">
                         </div>
                         <span class="font-bold tracking-widest text-2xl">×</span>
-                        <img src="UraCafe _Logo.jpg" alt="UraCafe Logo" class="h-16 w-auto invert brightness-0">
+                        <!-- UraCafe Logo - 修正箇所: 視認性向上のため白背景カードに追加 -->
+                        <div class="bg-white p-3 rounded-xl shadow-lg">
+                            <img src="UraCafe _Logo.jpg" alt="UraCafe Logo" class="h-16 w-auto object-contain">
+                        </div>
                     </div>
                     <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight text-red-500">2026、浦河の道を、<br>もっと自由に。</h2>
                     <p class="text-gray-400 mb-8 leading-relaxed">
@@ -317,9 +320,13 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col items-center mb-8">
                 <div class="flex items-center space-x-4 mb-4">
-                    <img src="UraCafe _Logo.jpg" alt="UraCafe Logo" class="h-16 w-auto object-contain" onerror="this.src='https://via.placeholder.com/80x80?text=Ura';">
+                    <div class="bg-white p-2 rounded-lg shadow-sm">
+                        <img src="UraCafe _Logo.jpg" alt="UraCafe Logo" class="h-16 w-auto object-contain" onerror="this.src='https://via.placeholder.com/80x80?text=Ura';">
+                    </div>
                     <span class="text-2xl text-gray-200">×</span>
-                    <img src="jeep_logo.jpg" alt="Jeep Logo" class="h-10 w-auto object-contain" onerror="this.src='https://via.placeholder.com/80x40?text=JEEP';">
+                    <div class="bg-white p-2 rounded-lg shadow-sm">
+                        <img src="jeep_logo.jpg" alt="Jeep Logo" class="h-10 w-auto object-contain" onerror="this.src='https://via.placeholder.com/80x40?text=JEEP';">
+                    </div>
                 </div>
                 <p class="text-gray-500 max-w-sm text-sm">
                     浦河の自然が育んだ「夏いちご」と、<br>
