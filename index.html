@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UraCafe STRAWBERRY & JEEP ADVENTURE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=M+PLUS+Rounded+1c:wght@700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .font-brand {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+
+        .strawberry-gradient {
+            background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%);
+        }
+
+        /* ロゴのブラウンに合わせたアクセントカラー */
+        .logo-brown {
+            color: #8d6e63;
+        }
+        .bg-logo-brown {
+            background-color: #8d6e63;
+        }
+
+        .jeep-dark {
+            background-color: #1a1a1a;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1516746927453-90393081e79d?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .rounded-custom {
+            border-radius: 2.5rem;
+        }
+    </style>
+</head>
+<body class="bg-orange-50/30 text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="UraCafe _Logo.jpg" alt="UraCafe Logo" class="h-12 w-auto object-contain" onerror="this.src='https://via.placeholder.com/50x50?text=Ura'; this.onerror=null;">
+                <div class="font-black text-xl tracking-tighter text-gray-700 hidden sm:block">UraCafe</div>
+            </div>
+            <nav class="hidden md:flex space-x-6 font-bold text-sm">
+                <a href="#event" class="hover:text-red-500 transition">イベント</a>
+                <a href="#menu" class="hover:text-red-500 transition">限定スイーツ</a>
+                <a href="#jeep" class="hover:text-red-500 transition">Jeep試乗</a>
+                <a href="#access" class="hover:text-red-500 transition">アクセス</a>
+            </nav>
+            <a href="#present" class="bg-red-500 text-white px-5 py-2 rounded-full font-bold text-sm hover:bg-red-600 transition shadow-md">
+                プレゼント応募
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[90vh] flex items-center justify-center text-center text-white pt-16">
+        <div class="container mx-auto px-4">
+            <div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full mb-6 tracking-widest font-bold text-sm uppercase">
+                UraCafe × Jeep Special Event 2024
+            </div>
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight">
+                ゆるりと、<br class="md:hidden">冒険と、<br class="md:hidden">苺の誘惑。
+            </h1>
+            <p class="text-lg md:text-xl mb-10 font-medium opacity-90 max-w-2xl mx-auto">
+                浦河の心地よい海風と、UraCafe自慢の「夏いちご」。<br class="hidden md:block">
+                ワイルドなJeepと一緒に、新しい夏の思い出を作りませんか？
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#menu" class="bg-white text-red-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl">
+                    限定メニューを見る
+                </a>
+                <a href="#jeep" class="bg-red-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition shadow-xl">
+                    Jeep試乗予約
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Section -->
+    <section id="event" class="py-20 bg-white overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                    <span class="text-red-500 font-bold tracking-widest uppercase">Special Campaign</span>
+                    <h2 class="text-3xl md:text-5xl font-black mt-2 mb-8">UraCafeで過ごす、<br>特別な3つの体験。</h2>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="bg-orange-100 p-4 rounded-full mr-4 shadow-sm">
+                                <i class="fas fa-paw text-orange-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1">来場者プレゼント</h3>
+                                <p class="text-gray-600">ロゴ入りオリジナルステッカーと「浦河産いちごバター」を先着プレゼント！</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-red-100 p-4 rounded-full mr-4 shadow-sm">
+                                <i class="fas fa-camera-retro text-red-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1">SNSフォトコンテスト</h3>
+                                <p class="text-gray-600">「#UraCafe」をつけて投稿！優秀者にはペアランチ招待券を贈呈。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-green-100 p-4 rounded-full mr-4 shadow-sm">
+                                <i class="fas fa-home text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-1">癒やしのモデルハウス</h3>
+                                <p class="text-gray-600">カフェを楽しみながら、理想の住まいをゆっくり見学できます。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="absolute inset-0 bg-red-100 rounded-custom rotate-3 scale-105 opacity-50"></div>
+                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&q=80&w=800" alt="Cafe House" class="rounded-custom shadow-xl relative z-10 w-full object-cover aspect-video border-8 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-orange-50/50">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center mb-6">
+                 <img src="UraCafe _Logo.jpg" alt="Logo Accent" class="h-16 opacity-50 grayscale hover:grayscale-0 transition duration-500 cursor-default" onerror="this.style.display='none'">
+            </div>
+            <h2 class="text-3xl md:text-5xl font-black mb-4 italic text-red-600">Special Strawberry Menu</h2>
+            <p class="text-gray-600 mb-16 font-bold">浦河特産の「夏いちご」を惜しみなく使用した、期間限定の自信作。</p>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Menu Item 1: Gelato -->
+                <div class="bg-white rounded-custom overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group border-b-8 border-red-400">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="Gemini_Generated_Image_1ysox61ysox61yso.jpg" alt="浦河ルビーの生ジェラート" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 left-4 bg-white/90 px-4 py-1 rounded-full text-red-600 font-bold text-xs">UraCafe 名物</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-black text-xl mb-2">浦河ルビーの生ジェラート</h3>
+                        <p class="text-gray-600 text-sm mb-4">完熟苺をその場で練り込んだ、果肉感たっぷりのプレミアムジェラート。</p>
+                        <span class="text-xl font-bold text-red-600">¥1,200</span>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2: Shaved Ice/Cup -->
+                <div class="bg-white rounded-custom overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group border-b-8 border-pink-400">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="Gemini_Generated_Image_2bza4c2bza4c2bza.jpg" alt="けずり苺のスペシャルカップ" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-4 py-1 rounded-full font-bold text-xs">SNSで話題</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-black text-xl mb-2">けずり苺のスペシャルカップ</h3>
+                        <p class="text-gray-600 text-sm mb-4">凍らせた苺をまるごと削り、ホイップと生苺をトッピングした贅沢な一杯。</p>
+                        <span class="text-xl font-bold text-red-600">¥1,500</span>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3: Smoothie -->
+                <div class="bg-white rounded-custom overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 group border-b-8 border-orange-300">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="Gemini_Generated_Image_5az0dm5az0dm5az0.jpg" alt="贅沢いちごのスムージー" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="font-black text-xl mb-2">贅沢いちごのスムージー</h3>
+                        <p class="text-gray-600 text-sm mb-4">苺の甘みと酸味を凝縮。濃厚ながらも後味すっきりとした夏の定番。</p>
+                        <span class="text-xl font-bold text-red-600">¥850</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jeep Collaboration -->
+    <section id="jeep" class="py-24 jeep-dark text-white overflow-hidden relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800" alt="Jeep Wrangler" class="rounded-custom shadow-2xl">
+                </div>
+                <div class="w-full lg:w-1/2 lg:pl-16">
+                    <div class="flex items-center space-x-4 mb-8">
+                        <div class="bg-white p-2 rounded-lg">
+                            <img src="https://sapporokiyota.jeep-dealer.jp/jeep/favicon.ico" alt="Jeep Logo" class="w-8 h-8">
+                        </div>
+                        <span class="font-bold tracking-widest text-xl">× UraCafe</span>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight text-red-500">浦河の道を、<br>もっと自由に。</h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        今回のイベントは「Jeep札幌清田」との特別タッグ！<br>
+                        浦河の美しい海岸線を走るのに最適なJeep最新モデルを展示。
+                        試乗された方には、UraCafe特製の「苺のひんやりドリンク」を無料でご提供いたします。
+                    </p>
+                    <a href="https://sapporokiyota.jeep-dealer.jp/jeep/" target="_blank" class="inline-block border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">
+                        Jeep札幌清田 公式詳細へ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Present Section -->
+    <section id="present" class="py-20 strawberry-gradient text-white">
+        <div class="container mx-auto px-4 max-w-3xl text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-8">お楽しみ抽選会に応募！</h2>
+            <div class="glass-card p-10 rounded-custom text-gray-900 shadow-2xl">
+                <p class="mb-8 font-bold text-lg text-red-600">事前エントリーで必ずもらえる！</p>
+                <p class="mb-8 text-sm md:text-base">当日会場で使える「スイーツ500円割引クーポン」や、UraCafe特製グッズをゲットしよう。</p>
+                <form class="space-y-4 text-left">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold mb-2 ml-2">お名前</label>
+                            <input type="text" placeholder="浦河 太郎" class="w-full px-5 py-3 border border-gray-200 rounded-full focus:ring-2 focus:ring-red-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold mb-2 ml-2">メールアドレス</label>
+                            <input type="email" placeholder="mail@example.com" class="w-full px-5 py-3 border border-gray-200 rounded-full focus:ring-2 focus:ring-red-500 outline-none">
+                        </div>
+                    </div>
+                    <button type="button" class="w-full bg-red-600 text-white py-4 rounded-full font-black text-lg shadow-lg hover:bg-red-700 transition transform hover:-translate-y-1 mt-4">
+                        クーポンをGETする
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Access -->
+    <section id="access" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-black mb-6 flex items-center">
+                        <i class="fas fa-map-pin text-red-500 mr-2"></i>
+                        開催情報
+                    </h2>
+                    <div class="space-y-5">
+                        <div class="flex flex-col border-b pb-3">
+                            <span class="text-xs text-gray-500 font-bold uppercase tracking-wider">Schedule</span>
+                            <span class="font-bold text-xl text-gray-800">2024年7月20日(土) 〜 8月4日(日)</span>
+                        </div>
+                        <div class="flex flex-col border-b pb-3">
+                            <span class="text-xs text-gray-500 font-bold uppercase tracking-wider">Place</span>
+                            <span class="font-bold text-xl text-gray-800 italic">UraCafe (浦河町 モデルハウス内)</span>
+                        </div>
+                        <div class="flex flex-col border-b pb-3">
+                            <span class="text-xs text-gray-500 font-bold uppercase tracking-wider">Entry Fee</span>
+                            <span class="font-bold text-xl text-gray-800">無料 / お車でお越しいただけます</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex space-x-4">
+                         <a href="https://tabelog.com/hokkaido/A0108/A010804/1079411/" target="_blank" class="flex-1 text-center bg-orange-100 text-orange-700 py-3 rounded-full font-bold hover:bg-orange-200 transition">
+                            食べログを見る
+                         </a>
+                         <a href="#" class="flex-1 text-center bg-gray-100 text-gray-700 py-3 rounded-full font-bold hover:bg-gray-200 transition">
+                            お問い合わせ
+                         </a>
+                    </div>
+                </div>
+                <div class="rounded-custom overflow-hidden shadow-2xl h-80 relative">
+                    <img src="https://images.unsplash.com/photo-1524813686514-a57563d77965?auto=format&fit=crop&q=80&w=800" alt="Hokkaido Landscape" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/20 text-white font-bold p-10 text-center">
+                        <div>
+                            <p class="text-2xl mb-2">浦河の絶景と<br>お待ちしております。</p>
+                            <p class="text-sm opacity-80 underline">Google Mapで開く</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-16 border-t border-gray-100 text-center">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center mb-8">
+                <img src="UraCafe _Logo.jpg" alt="UraCafe Logo" class="h-20 mb-4 object-contain" onerror="this.src='https://via.placeholder.com/80x80?text=Ura'; this.onerror=null;">
+                <p class="text-gray-500 max-w-sm text-sm">
+                    浦河の自然が育んだ「夏いちご」と、<br>
+                    皆さまの日常を彩る特別な空間を。
+                </p>
+            </div>
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="#" class="text-gray-400 hover:text-red-500 transition text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-red-500 transition text-2xl"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p class="text-gray-400 text-xs">© 2024 UraCafe & Jeep Special Event. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
