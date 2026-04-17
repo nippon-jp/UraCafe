@@ -22,14 +22,6 @@
             background: linear-gradient(135deg, #ff4e50 0%, #f9d423 100%);
         }
 
-        /* ロゴのブラウンに合わせたアクセントカラー */
-        .logo-brown {
-            color: #8d6e63;
-        }
-        .bg-logo-brown {
-            background-color: #8d6e63;
-        }
-
         .jeep-dark {
             background-color: #1a1a1a;
         }
@@ -47,14 +39,6 @@
 
         .rounded-custom {
             border-radius: 2.5rem;
-        }
-
-        /* アニメーション */
-        .hover-lift {
-            transition: transform 0.3s ease;
-        }
-        .hover-lift:hover {
-            transform: translateY(-5px);
         }
     </style>
 </head>
@@ -215,28 +199,29 @@
     <section id="jeep" class="py-24 jeep-dark text-white overflow-hidden relative">
         <div class="container mx-auto px-4 relative z-10">
             <div class="flex flex-wrap items-center">
-                <div class="w-full lg:w-1/2 mb-12 lg:mb-0 bg-white/5 rounded-custom p-4">
-                    <img src="kv.jpg.img.2880.jpg" alt="Jeep Wrangler" class="rounded-custom shadow-2xl w-full h-auto object-contain" onerror="this.src='https://via.placeholder.com/800x450?text=Jeep+Wrangler';">
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0 bg-white/5 rounded-custom p-4 overflow-hidden shadow-2xl">
+                    <!-- お送りいただいた実際のコラボ風景写真 UraCafe03.jpg をメインに採用 -->
+                    <img src="UraCafe03.jpg" alt="Jeep × UraCafe イベント風景" class="rounded-custom w-full h-auto object-cover hover:scale-105 transition duration-700" onerror="this.src='https://via.placeholder.com/800x600?text=Jeep+Event+Scene';">
                 </div>
                 <div class="w-full lg:w-1/2 lg:pl-16 mt-8 lg:mt-0">
                     <div class="flex items-center space-x-6 mb-8">
                         <!-- Jeep Logo -->
-                        <div class="bg-white p-4 rounded-xl shadow-lg">
+                        <div class="bg-white p-4 rounded-xl shadow-lg hover-lift">
                             <img src="jeep_logo.jpg" alt="Jeep Logo" class="h-8 w-auto">
                         </div>
                         <span class="font-bold tracking-widest text-2xl">×</span>
-                        <!-- UraCafe Logo - 修正箇所: 視認性向上のため白背景カードに追加 -->
-                        <div class="bg-white p-3 rounded-xl shadow-lg">
+                        <!-- UraCafe Logo -->
+                        <div class="bg-white p-3 rounded-xl shadow-lg hover-lift">
                             <img src="UraCafe _Logo.jpg" alt="UraCafe Logo" class="h-16 w-auto object-contain">
                         </div>
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight text-red-500">2026、浦河の道を、<br>もっと自由に。</h2>
-                    <p class="text-gray-400 mb-8 leading-relaxed">
+                    <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight text-red-500 italic">2026、浦河の道を、<br>もっと自由に。</h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed text-lg">
                         今回のイベントは「Jeep札幌清田」との特別タッグ！<br>
                         浦河の美しい海岸線を走るのに最適なWranglerなど最新モデルを展示。
                         試乗された方には、UraCafe特製の「苺のひんやりドリンク」を無料でご提供いたします。
                     </p>
-                    <a href="https://sapporokiyota.jeep-dealer.jp/jeep/" target="_blank" class="inline-block border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">
+                    <a href="https://sapporokiyota.jeep-dealer.jp/jeep/" target="_blank" class="inline-block border-2 border-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-black transition shadow-lg">
                         Jeep札幌清田 公式詳細へ
                     </a>
                 </div>
@@ -254,11 +239,11 @@
                 <form class="space-y-4 text-left">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs font-bold mb-2 ml-2">お名前</label>
+                            <label class="block text-xs font-bold mb-2 ml-2 text-gray-500 uppercase">Name</label>
                             <input type="text" placeholder="浦河 太郎" class="w-full px-5 py-3 border border-gray-200 rounded-full focus:ring-2 focus:ring-red-500 outline-none">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold mb-2 ml-2">メールアドレス</label>
+                            <label class="block text-xs font-bold mb-2 ml-2 text-gray-500 uppercase">Mail</label>
                             <input type="email" placeholder="mail@example.com" class="w-full px-5 py-3 border border-gray-200 rounded-full focus:ring-2 focus:ring-red-500 outline-none">
                         </div>
                     </div>
@@ -286,7 +271,7 @@
                         </div>
                         <div class="flex flex-col border-b pb-3 border-gray-100">
                             <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">Place</span>
-                            <span class="font-bold text-xl text-gray-700 italic">UraCafe (浦河町 モデルハウス内)</span>
+                            <span class="font-bold text-xl text-gray-700 italic font-brand text-red-500">UraCafe (浦河町 モデルハウス内)</span>
                         </div>
                         <div class="flex flex-col border-b pb-3 border-gray-100">
                             <span class="text-xs text-gray-400 font-bold uppercase tracking-wider">Entry Fee</span>
@@ -298,7 +283,7 @@
                             食べログを見る
                          </a>
                          <a href="https://www.instagram.com/uracafe_/" target="_blank" class="flex-1 text-center bg-gray-100 text-gray-700 py-3 rounded-full font-bold hover:bg-gray-200 transition">
-                            Instagramを見る
+                            Instagram
                          </a>
                     </div>
                 </div>
@@ -320,11 +305,11 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col items-center mb-8">
                 <div class="flex items-center space-x-4 mb-4">
-                    <div class="bg-white p-2 rounded-lg shadow-sm">
+                    <div class="bg-white p-2 rounded-lg shadow-sm border border-gray-100">
                         <img src="UraCafe _Logo.jpg" alt="UraCafe Logo" class="h-16 w-auto object-contain" onerror="this.src='https://via.placeholder.com/80x80?text=Ura';">
                     </div>
                     <span class="text-2xl text-gray-200">×</span>
-                    <div class="bg-white p-2 rounded-lg shadow-sm">
+                    <div class="bg-white p-2 rounded-lg shadow-sm border border-gray-100">
                         <img src="jeep_logo.jpg" alt="Jeep Logo" class="h-10 w-auto object-contain" onerror="this.src='https://via.placeholder.com/80x40?text=JEEP';">
                     </div>
                 </div>
@@ -337,7 +322,7 @@
                 <a href="https://www.instagram.com/uracafe_/" target="_blank" class="text-gray-400 hover:text-red-500 transition text-2xl"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="text-gray-400 hover:text-red-500 transition text-2xl"><i class="fab fa-facebook-f"></i></a>
             </div>
-            <p class="text-gray-400 text-xs">© 2026 UraCafe & Jeep Special Event. All Rights Reserved.</p>
+            <p class="text-gray-400 text-xs font-bold tracking-widest uppercase">© 2026 UraCafe & Jeep Special Event. All Rights Reserved.</p>
         </div>
     </footer>
 
